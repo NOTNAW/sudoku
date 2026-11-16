@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#3388ff">
+    <title>Sudoku</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Sudoku</h1>
+    <div id="stats">
+      <span id="timer">00:00</span>
+      <span id="best">Best: —</span>
+    </div>
+    <div id="board"></div>
+    <div id="message"></div>
+    <div class="controls">
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium" selected>Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+      <button id="new-btn">New Puzzle</button>
+      <button id="notes-btn">Notes</button>
+      <button id="hint-btn">Hint</button>
+      <button id="solve-btn">Solve</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
